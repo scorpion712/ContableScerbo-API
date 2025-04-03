@@ -19,7 +19,7 @@ ENV DISPLAY=:99
 WORKDIR /app
 
 # Copy package files first for better caching
-COPY package.json yarn.lock ./
+COPY package.json ./
 
 # Install production dependencies
 RUN yarn install --production
